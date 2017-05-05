@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>计算器</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#caculator{
+			position: relative;
+			top: 200px;
+		}
+		input{
+			width: 80px;
+			height: 40px;
+		}
+		#zero{
+			width: 172px;
+			height: 40px;
+		}
+		#result{
+			width: 344px;
+			height: 80px;
+			font-size: 40px;
+			text-align: right; 
+		}
+	</style>
+	<script type="text/javascript" src="caculator.js">
+	</script>
+	<!-- <script type="text/javascript" src="caculator.js"></script> -->
+</head>
+<body align="center">
+ 	<div class="main" align="center">
+ 		<table id="caculator" border="1">
+ 		<tr>
+ 			<td colspan="4"><input type="text" name="result" id="result"></td>
+ 		</tr>
+		<tr>
+			<td><input type="button" name="deleteall" value="C" onclick="getData('C')"></td>
+			<td><input type="button" name="pow" value="√" onclick="getData('√')"></td>
+			<td><input type="button" name="delete" value="<-" onclick="getData('<-')"></td>
+			<td><input type="button" name="divide" value="/" onclick="getData('/')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="seven" value="7" onclick="getData('7')"></td>
+			<td><input type="button" name="eight" value="8" onclick="getData('8')"></td>
+			<td><input type="button" name="nine" value="9" onclick="getData('9')"></td>
+			<td><input type="button" name="multiply" value="x" onclick="getData('x')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="four" value="4" onclick="getData('4')"></td>
+			<td><input type="button" name="five" value="5" onclick="getData('5')"></td>
+			<td><input type="button" name="six" value="6" onclick="getData('6')"></td>
+			<td><input type="button" name="minus" value="-" onclick="getData('-')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" name="one" value="1" onclick="getData('1')"></td>
+			<td><input type="button" name="two" value="2" onclick="getData('2')"></td>
+			<td><input type="button" name="three" value="3" onclick="getData('3')"></td>
+			<td><input type="button" name="plus" value="+" onclick="getData('+')"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><input type="button" name="zero" id="zero" value="0" onclick="getData('0')"></td>
+			<td><input type="button" name="point" value="." onclick="getData('.')"></td>
+			<td><input type="button" name="equal" value="=" onclick="getData('=')"></td>
+		</tr>
+	</table>
+ 	</div>
+</body>
+</html>
